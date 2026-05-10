@@ -3,5 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'API TOKO RUNNING';
+    return response()->json([
+        'status' => 'laravel running'
+    ]);
 });
